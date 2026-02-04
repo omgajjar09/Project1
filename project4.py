@@ -13,9 +13,7 @@ while True:
     choice=int(input("Please enter your choice :"))
     if choice==1:
         data=input("\nEnter data for a 1D array (Separated by spaces) :\n").split(" ")
-        arr=[]
-        for i in data:
-            arr.append(int(i))
+        arr=[int(i) for i in data]
         print("\nData has been stored successfully\n")
 
     elif choice==2:
@@ -48,11 +46,11 @@ while True:
         choice=int(input("Enter your Choice: "))
 
         if choice==1:
-            data.sort()
+            arr.sort()
             print(f"Sorted Data in Ascending Order:\n{arr} \n")
 
         elif choice==2:
-            data.sort(reverse=True)
+            arr.sort(reverse=True)
             print(f"Sorted Data in Descending Order:\n{arr}\n")
 
     elif choice==6: 
