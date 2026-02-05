@@ -30,7 +30,7 @@ while True:
     elif choice==2:
         print("\n---Display All Students ---\n")
         for st in students:
-            print(f"Student ID: {st["id"]} | Name: {st["name"]} | Age: {st["age"]} | Grade: {st["grade"]} | Subjects: {st["sub"]}")
+            print(f"Student ID: {st['id']} | Name: {st['name']} | Age: {st['age']} | Grade: {st['grade']} | Subjects: {st['sub']}")
 
     elif choice==3:
         stid=int(input("Enter Update ID :"))
@@ -55,10 +55,10 @@ while True:
     elif choice==5:
         print("---Display All Subjects ---\n")
         for st in students:
-            print(f"Subjects: {st["sub"]}")
+            print(f"Subjects: {st['sub']}\n")
 
     elif choice==6:
-        print("Thank You !")
+        print("\nThank You !\n")
         break
 
     else:
