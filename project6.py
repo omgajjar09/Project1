@@ -77,6 +77,9 @@ class journal:
         except FileNotFoundError:
             print("\nError : File Not Found.\n")
 
+    def __del__(self):
+        pass
+
 
 jobj=journal()
 
